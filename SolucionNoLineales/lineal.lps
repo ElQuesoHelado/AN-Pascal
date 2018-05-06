@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="14">
+      <Unit0>
+        <Filename Value="lineal.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="16"/>
+        <UsageCount Value="208"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="linealinter.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="80"/>
+        <CursorPos X="53" Y="96"/>
+        <UsageCount Value="208"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="claseli.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="236"/>
+        <CursorPos X="37" Y="71"/>
+        <UsageCount Value="208"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\Taylorepli\clasetay.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="18"/>
+        <CursorPos X="45" Y="33"/>
+        <UsageCount Value="6"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\Taylorepli\intertay.pas"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="40" Y="25"/>
+        <UsageCount Value="6"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="linealinter.lfm"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="40"/>
+        <CursorPos X="14" Y="169"/>
+        <UsageCount Value="6"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="C:\lazarus\lcl\grids.pas"/>
+        <UnitName Value="Grids"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="9594"/>
+        <CursorPos Y="9617"/>
+        <UsageCount Value="5"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="C:\Users\JJAC\Downloads\Taylor\class_taylor.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="18" Y="73"/>
+        <UsageCount Value="9"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="C:\Users\JJAC\Downloads\Taylor\maintaylor.pas"/>
+        <ComponentName Value="frmTaylor"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="13" Y="91"/>
+        <UsageCount Value="10"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="C:\lazarus\lcl\include\customedit.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="591"/>
+        <CursorPos X="17" Y="614"/>
+        <UsageCount Value="8"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="C:\lazarus\fpc\3.0.4\source\rtl\inc\systemh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="94"/>
+        <CursorPos X="3" Y="117"/>
+        <UsageCount Value="1"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="C:\lazarus\fpc\3.0.4\source\rtl\objpas\math.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="344"/>
+        <CursorPos X="10" Y="366"/>
+        <UsageCount Value="1"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="clasematrix.pas"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="392"/>
+        <CursorPos X="21" Y="362"/>
+        <UsageCount Value="91"/>
+        <Loaded Value="True"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="..\Matrix\matrinter.pas"/>
+        <UnitName Value="MatrInter"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="7"/>
+        <CursorPos X="27" Y="26"/>
+        <UsageCount Value="4"/>
+      </Unit13>
+    </Units>
+    <JumpHistory Count="28" HistoryIndex="27">
+      <Position1>
+        <Filename Value="clasematrix.pas"/>
+        <Caret Line="203" Column="3" TopLine="178"/>
+      </Position1>
+      <Position2>
+        <Filename Value="clasematrix.pas"/>
+        <Caret Line="204" Column="25" TopLine="178"/>
+      </Position2>
+      <Position3>
+        <Filename Value="clasematrix.pas"/>
+        <Caret Line="203" Column="3" TopLine="178"/>
+      </Position3>
+      <Position4>
+        <Filename Value="clasematrix.pas"/>
+        <Caret Line="37" Column="19"/>
+      </Position4>
+      <Position5>
+        <Filename Value="clasematrix.pas"/>
+        <Caret Line="304" Column="11" TopLine="279"/>
+      </Position5>
+      <Position6>
+        <Filename Value="clasematrix.pas"/>
+        <Caret Line="253" Column="17" TopLine="228"/>
+      </Position6>
+      <Position7>
+        <Filename Value="clasematrix.pas"/>
+        <Caret Line="304" Column="11" TopLine="279"/>
+      </Position7>
+      <Position8>
+        <Filename Value="clasematrix.pas"/>
+        <Caret Line="253" Column="17" TopLine="228"/>
+      </Position8>
+      <Position9>
+        <Filename Value="clasematrix.pas"/>
+        <Caret Line="231" Column="3" TopLine="195"/>
+      </Position9>
+      <Position10>
+        <Filename Value="clasematrix.pas"/>
+        <Caret Line="238" Column="24" TopLine="207"/>
+      </Position10>
+      <Position11>
+        <Filename Value="clasematrix.pas"/>
+        <Caret Line="225" Column="21" TopLine="198"/>
+      </Position11>
+      <Position12>
+        <Filename Value="clasematrix.pas"/>
+        <Caret Line="235" Column="14" TopLine="212"/>
+      </Position12>
+      <Position13>
+        <Filename Value="clasematrix.pas"/>
+        <Caret Line="276" Column="15" TopLine="233"/>
+      </Position13>
+      <Position14>
+        <Filename Value="clasematrix.pas"/>
+        <Caret Line="264" Column="17" TopLine="240"/>
+      </Position14>
+      <Position15>
+        <Filename Value="clasematrix.pas"/>
+        <Caret Line="266" Column="31" TopLine="238"/>
+      </Position15>
+      <Position16>
+        <Filename Value="clasematrix.pas"/>
+        <Caret Line="280" Column="29" TopLine="248"/>
+      </Position16>
+      <Position17>
+        <Filename Value="clasematrix.pas"/>
+        <Caret Line="274" Column="15" TopLine="254"/>
+      </Position17>
+      <Position18>
+        <Filename Value="clasematrix.pas"/>
+        <Caret Line="280" Column="28" TopLine="260"/>
+      </Position18>
+      <Position19>
+        <Filename Value="clasematrix.pas"/>
+        <Caret Line="294" Column="40" TopLine="266"/>
+      </Position19>
+      <Position20>
+        <Filename Value="linealinter.pas"/>
+        <Caret Line="143" Column="38" TopLine="111"/>
+      </Position20>
+      <Position21>
+        <Filename Value="linealinter.pas"/>
+        <Caret Line="124" Column="25"/>
+      </Position21>
+      <Position22>
+        <Filename Value="linealinter.pas"/>
+        <Caret Line="126" Column="25" TopLine="81"/>
+      </Position22>
+      <Position23>
+        <Filename Value="linealinter.pas"/>
+        <Caret Line="127" Column="25" TopLine="127"/>
+      </Position23>
+      <Position24>
+        <Filename Value="linealinter.pas"/>
+        <Caret Line="126" Column="26" TopLine="81"/>
+      </Position24>
+      <Position25>
+        <Filename Value="linealinter.pas"/>
+        <Caret Line="125" Column="26" TopLine="80"/>
+      </Position25>
+      <Position26>
+        <Filename Value="linealinter.pas"/>
+        <Caret Line="276" Column="3" TopLine="248"/>
+      </Position26>
+      <Position27>
+        <Filename Value="linealinter.pas"/>
+        <Caret Line="275" Column="3" TopLine="247"/>
+      </Position27>
+      <Position28>
+        <Filename Value="linealinter.pas"/>
+        <Caret Line="8" Column="25" TopLine="8"/>
+      </Position28>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

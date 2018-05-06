@@ -1,0 +1,203 @@
+object Form1: TForm1
+  Left = 960
+  Height = 1416
+  Top = 144
+  Width = 1769
+  Caption = 'Form1'
+  ClientHeight = 1416
+  ClientWidth = 1769
+  DesignTimePPI = 192
+  LCLVersion = '1.8.2.0'
+  object btExecute: TButton
+    Left = 87
+    Height = 50
+    Top = 75
+    Width = 150
+    Caption = 'Execute'
+    OnClick = btExecuteClick
+    TabOrder = 0
+  end
+  object ediInput: TEdit
+    Left = 336
+    Height = 40
+    Top = 85
+    Width = 160
+    TabOrder = 1
+    Text = '1.5'
+  end
+  object Chart1: TChart
+    Left = 704
+    Height = 760
+    Top = 80
+    Width = 872
+    AxisList = <    
+      item
+        Marks.LabelBrush.Style = bsClear
+        Minors = <>
+        Title.LabelFont.Orientation = 900
+        Title.LabelBrush.Style = bsClear
+      end    
+      item
+        Alignment = calBottom
+        Marks.LabelBrush.Style = bsClear
+        Minors = <>
+        Title.LabelBrush.Style = bsClear
+      end>
+    Extent.UseXMax = True
+    Extent.UseXMin = True
+    Extent.UseYMax = True
+    Extent.UseYMin = True
+    Extent.XMax = 20
+    Extent.XMin = -20
+    Extent.YMax = 20
+    Extent.YMin = -20
+    Foot.Brush.Color = clBtnFace
+    Foot.Font.Color = clBlue
+    Title.Brush.Color = clBtnFace
+    Title.Font.Color = clBlue
+    Title.Text.Strings = (
+      'TAChart'
+    )
+    object Chart1ConstantLine1: TConstantLine
+      Position = 0
+    end
+    object Chart1ConstantLine2: TConstantLine
+      LineStyle = lsVertical
+      Position = 0
+    end
+    object poli1: TLineSeries
+    end
+    object poli2: TLineSeries
+    end
+    object poli1Puntos: TLineSeries
+      LinePen.Color = clRed
+      Pointer.Brush.Color = clLime
+      ShowPoints = True
+    end
+    object poli2Puntos: TLineSeries
+      Pointer.Brush.Color = clRed
+      ShowPoints = True
+    end
+    object PtsInter: TLineSeries
+      Pointer.Brush.Color = clBlack
+      ShowPoints = True
+    end
+  end
+  object sgData: TStringGrid
+    Left = 64
+    Height = 344
+    Top = 152
+    Width = 464
+    AutoFillColumns = True
+    ColCount = 2
+    FixedCols = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
+    RowCount = 6
+    TabOrder = 3
+    ColWidths = (
+      230
+      230
+    )
+    Cells = (
+      12
+      0
+      0
+      'x'
+      0
+      1
+      '0'
+      0
+      2
+      '4'
+      0
+      3
+      '-2'
+      0
+      4
+      '1'
+      0
+      5
+      '3'
+      1
+      0
+      'y'
+      1
+      1
+      '-3'
+      1
+      2
+      '-1'
+      1
+      3
+      '2'
+      1
+      4
+      '-5'
+      1
+      5
+      '2'
+    )
+  end
+  object meResult: TMemo
+    Left = 24
+    Height = 438
+    Top = 904
+    Width = 1688
+    TabOrder = 4
+  end
+  object sgData1: TStringGrid
+    Left = 80
+    Height = 344
+    Top = 528
+    Width = 464
+    AutoFillColumns = True
+    ColCount = 2
+    FixedCols = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
+    RowCount = 6
+    TabOrder = 5
+    ColWidths = (
+      230
+      230
+    )
+    Cells = (
+      12
+      0
+      0
+      'x'
+      0
+      1
+      '-3'
+      0
+      2
+      '0'
+      0
+      3
+      '1.5'
+      0
+      4
+      '4.5'
+      0
+      5
+      '3'
+      1
+      0
+      'y'
+      1
+      1
+      '-4'
+      1
+      2
+      '1'
+      1
+      3
+      '3'
+      1
+      4
+      '2'
+      1
+      5
+      '-1'
+    )
+  end
+end

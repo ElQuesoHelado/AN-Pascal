@@ -1,0 +1,133 @@
+object Form1: TForm1
+  Left = 514
+  Height = 1025
+  Top = 288
+  Width = 1086
+  Caption = 'Form1'
+  ClientHeight = 1025
+  ClientWidth = 1086
+  DesignTimePPI = 192
+  OnCreate = FormCreate
+  LCLVersion = '1.8.2.0'
+  object btnEje: TButton
+    Left = 871
+    Height = 50
+    Top = 168
+    Width = 150
+    Caption = 'Ejecutar'
+    OnClick = btnEjeClick
+    TabOrder = 0
+  end
+  object tmRes: TMemo
+    Left = 745
+    Height = 96
+    Top = 56
+    Width = 276
+    Lines.Strings = (
+      ''
+    )
+    TabOrder = 1
+  end
+  object TDatos: TStringGrid
+    Left = 45
+    Height = 648
+    Top = 258
+    Width = 976
+    AutoFillColumns = True
+    ColCount = 3
+    Columns = <    
+      item
+        Title.Caption = 'Iteracion'
+        Width = 324
+      end    
+      item
+        Title.Caption = 'Xn'
+        Width = 324
+      end    
+      item
+        Title.Caption = 'Error'
+        Width = 324
+      end>
+    FixedCols = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
+    RowCount = 1
+    TabOrder = 2
+    ColWidths = (
+      324
+      324
+      324
+    )
+  end
+  object ediAng: TEdit
+    Left = 544
+    Height = 40
+    Top = 56
+    Width = 160
+    TabOrder = 3
+    Text = '1.5'
+  end
+  object ediErr: TEdit
+    Left = 544
+    Height = 40
+    Top = 112
+    Width = 160
+    TabOrder = 4
+    Text = '0.0001'
+  end
+  object rgAng: TRadioGroup
+    Left = 40
+    Height = 154
+    Top = 40
+    Width = 210
+    AutoFill = True
+    Caption = 'Angulo'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 117
+    ClientWidth = 206
+    ItemIndex = 0
+    Items.Strings = (
+      'Degrees'
+      'Radianes'
+    )
+    TabOrder = 5
+  end
+  object Label1: TLabel
+    Left = 508
+    Height = 32
+    Top = 64
+    Width = 19
+    Caption = 'X:'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 472
+    Height = 32
+    Top = 112
+    Width = 55
+    Caption = 'Error:'
+    ParentColor = False
+  end
+  object cbOper: TComboBox
+    Left = 240
+    Height = 40
+    Top = 88
+    Width = 200
+    ItemHeight = 32
+    ItemIndex = 0
+    Items.Strings = (
+      'Seno'
+      'Coseno'
+      'e^x'
+      'arctan'
+      'ln(x+1)'
+    )
+    TabOrder = 6
+    Text = 'Seno'
+  end
+end

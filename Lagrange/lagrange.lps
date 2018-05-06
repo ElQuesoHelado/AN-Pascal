@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="12">
+      <Unit0>
+        <Filename Value="lagrange.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="20"/>
+        <UsageCount Value="92"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="grangeinter.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="grangeInter"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="98"/>
+        <CursorPos X="65" Y="106"/>
+        <UsageCount Value="92"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="clgrange.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="clGrange"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="10"/>
+        <CursorPos X="21" Y="36"/>
+        <UsageCount Value="92"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="D:\SistemasEcuaciones\intersistecua.pas"/>
+        <UnitName Value="interSistecua"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="48"/>
+        <CursorPos X="22" Y="81"/>
+        <UsageCount Value="3"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="D:\SistemasEcuaciones\clsistem.pas"/>
+        <UnitName Value="clSistem"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="73"/>
+        <CursorPos X="18" Y="82"/>
+        <UsageCount Value="3"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\SolucionNoLineales\lineal.lpr"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="3"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\SolucionNoLineales\linealinter.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="106"/>
+        <CursorPos X="26" Y="124"/>
+        <UsageCount Value="45"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="custparse.pas"/>
+        <UnitName Value="custParse"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="169"/>
+        <CursorPos X="81" Y="182"/>
+        <UsageCount Value="45"/>
+        <Loaded Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="C:\lazarus\components\tachart\tacustomseries.pas"/>
+        <UnitName Value="TACustomSeries"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="858"/>
+        <CursorPos X="19" Y="876"/>
+        <UsageCount Value="3"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="C:\lazarus\components\tachart\tachartutils.pas"/>
+        <UnitName Value="TAChartUtils"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="11"/>
+        <CursorPos X="3" Y="34"/>
+        <UsageCount Value="3"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="..\SolucionNoLineales\claseli.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="17" Y="43"/>
+        <UsageCount Value="45"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="claseli.pas"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="17" Y="42"/>
+        <UsageCount Value="44"/>
+        <Loaded Value="True"/>
+      </Unit11>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="grangeinter.pas"/>
+        <Caret Line="53" Column="40" TopLine="50"/>
+      </Position1>
+      <Position2>
+        <Filename Value="grangeinter.pas"/>
+        <Caret Line="69" Column="41" TopLine="51"/>
+      </Position2>
+      <Position3>
+        <Filename Value="grangeinter.pas"/>
+        <Caret Line="66" Column="31" TopLine="51"/>
+      </Position3>
+      <Position4>
+        <Filename Value="grangeinter.pas"/>
+        <Caret Line="67" Column="31" TopLine="52"/>
+      </Position4>
+      <Position5>
+        <Filename Value="grangeinter.pas"/>
+        <Caret Line="66" Column="31" TopLine="51"/>
+      </Position5>
+      <Position6>
+        <Filename Value="grangeinter.pas"/>
+        <Caret Line="61" Column="75" TopLine="52"/>
+      </Position6>
+      <Position7>
+        <Filename Value="grangeinter.pas"/>
+        <Caret Line="64" Column="75" TopLine="55"/>
+      </Position7>
+      <Position8>
+        <Filename Value="grangeinter.pas"/>
+        <Caret Line="85" Column="35" TopLine="63"/>
+      </Position8>
+      <Position9>
+        <Filename Value="grangeinter.pas"/>
+        <Caret Line="86" Column="35" TopLine="64"/>
+      </Position9>
+      <Position10>
+        <Filename Value="grangeinter.pas"/>
+        <Caret Line="91" Column="26" TopLine="67"/>
+      </Position10>
+      <Position11>
+        <Filename Value="grangeinter.pas"/>
+        <Caret Line="101" Column="19" TopLine="78"/>
+      </Position11>
+      <Position12>
+        <Filename Value="grangeinter.pas"/>
+        <Caret Line="104" Column="51" TopLine="70"/>
+      </Position12>
+      <Position13>
+        <Filename Value="grangeinter.pas"/>
+        <Caret Line="101" Column="52" TopLine="70"/>
+      </Position13>
+      <Position14>
+        <Filename Value="grangeinter.pas"/>
+        <Caret Line="107" Column="34" TopLine="77"/>
+      </Position14>
+      <Position15>
+        <Filename Value="grangeinter.pas"/>
+        <Caret Line="106" Column="5" TopLine="83"/>
+      </Position15>
+      <Position16>
+        <Filename Value="grangeinter.pas"/>
+        <Caret Line="107" Column="27" TopLine="84"/>
+      </Position16>
+      <Position17>
+        <Filename Value="grangeinter.pas"/>
+        <Caret Line="103" Column="18" TopLine="85"/>
+      </Position17>
+      <Position18>
+        <Filename Value="grangeinter.pas"/>
+        <Caret Line="96" Column="45" TopLine="85"/>
+      </Position18>
+      <Position19>
+        <Filename Value="grangeinter.pas"/>
+        <Caret Line="107" Column="34" TopLine="85"/>
+      </Position19>
+      <Position20>
+        <Filename Value="grangeinter.pas"/>
+        <Caret Line="119" Column="51" TopLine="81"/>
+      </Position20>
+      <Position21>
+        <Filename Value="grangeinter.pas"/>
+        <Caret Line="109" Column="3" TopLine="75"/>
+      </Position21>
+      <Position22>
+        <Filename Value="grangeinter.pas"/>
+        <Caret Line="16" Column="15"/>
+      </Position22>
+      <Position23>
+        <Filename Value="grangeinter.pas"/>
+        <Caret Line="87" Column="35" TopLine="78"/>
+      </Position23>
+      <Position24>
+        <Filename Value="grangeinter.pas"/>
+        <Caret Line="55" Column="12" TopLine="44"/>
+      </Position24>
+      <Position25>
+        <Filename Value="grangeinter.pas"/>
+        <Caret Line="101" Column="32" TopLine="90"/>
+      </Position25>
+      <Position26>
+        <Filename Value="grangeinter.pas"/>
+        <Caret Line="103" Column="64" TopLine="84"/>
+      </Position26>
+      <Position27>
+        <Filename Value="grangeinter.pas"/>
+        <Caret Line="87" Column="21" TopLine="84"/>
+      </Position27>
+      <Position28>
+        <Filename Value="grangeinter.pas"/>
+        <Caret Line="143" Column="18" TopLine="132"/>
+      </Position28>
+      <Position29>
+        <Filename Value="grangeinter.pas"/>
+        <Caret Line="139" TopLine="111"/>
+      </Position29>
+      <Position30>
+        <Filename Value="grangeinter.pas"/>
+        <Caret Line="109" Column="35" TopLine="91"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

@@ -1,0 +1,115 @@
+object Form1: TForm1
+  Left = 502
+  Height = 854
+  Top = 289
+  Width = 1370
+  Caption = 'Form1'
+  ClientHeight = 854
+  ClientWidth = 1370
+  DesignTimePPI = 192
+  LCLVersion = '1.8.2.0'
+  object Button1: TButton
+    Left = 133
+    Height = 50
+    Top = 91
+    Width = 150
+    Caption = 'Execute'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object sgResults: TStringGrid
+    Left = 48
+    Height = 480
+    Top = 224
+    Width = 1112
+    ColCount = 3
+    FixedCols = 0
+    TabOrder = 1
+    ColWidths = (
+      28
+      953
+      127
+    )
+    Cells = (
+      3
+      0
+      0
+      '#'
+      1
+      0
+      'Xn'
+      2
+      0
+      'Error'
+    )
+  end
+  object meEcua: TMemo
+    Left = 528
+    Height = 170
+    Top = 8
+    Width = 400
+    Lines.Strings = (
+      'power(x,2)+power(y,2)-5'
+      'power(x,2)-power(y,2)-1'
+    )
+    TabOrder = 2
+  end
+  object ediError: TEdit
+    Left = 368
+    Height = 40
+    Top = 32
+    Width = 136
+    TabOrder = 3
+    Text = '0.00001'
+  end
+  object sgVar: TStringGrid
+    Left = 944
+    Height = 160
+    Top = 8
+    Width = 208
+    AutoFillColumns = True
+    ColCount = 2
+    FixedCols = 0
+    FixedRows = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
+    RowCount = 2
+    TabOrder = 4
+    ColWidths = (
+      102
+      102
+    )
+    Cells = (
+      4
+      0
+      0
+      'x'
+      0
+      1
+      'y'
+      1
+      0
+      '2'
+      1
+      1
+      '1'
+    )
+  end
+  object btLess: TButton
+    Left = 1160
+    Height = 56
+    Top = 32
+    Width = 136
+    Caption = 'btLess'
+    OnClick = btLessClick
+    TabOrder = 5
+  end
+  object btMore: TButton
+    Left = 1160
+    Height = 57
+    Top = 112
+    Width = 136
+    Caption = 'btMore'
+    OnClick = btMoreClick
+    TabOrder = 6
+  end
+end
