@@ -2,7 +2,7 @@
 <CONFIG>
   <ProjectSession>
     <PathDelim Value="\"/>
-    <Version Value="10"/>
+    <Version Value="11"/>
     <BuildModes Active="Default"/>
     <Units Count="13">
       <Unit0>
@@ -19,8 +19,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="interSistecua"/>
-        <TopLine Value="57"/>
-        <CursorPos X="33" Y="16"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="109"/>
+        <CursorPos X="35" Y="35"/>
         <UsageCount Value="91"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -39,10 +40,9 @@
         <Filename Value="clsistem.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="clSistem"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="151"/>
-        <CursorPos X="10" Y="164"/>
+        <TopLine Value="192"/>
+        <CursorPos X="18" Y="166"/>
         <UsageCount Value="84"/>
         <Loaded Value="True"/>
       </Unit3>
@@ -233,5 +233,9 @@
         <Caret Line="232" Column="26" TopLine="229"/>
       </Position30>
     </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode="default"/>
+    </RunParams>
   </ProjectSession>
 </CONFIG>

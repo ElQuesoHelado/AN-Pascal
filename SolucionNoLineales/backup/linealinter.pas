@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, TAGraph, TASeries, TAFuncSeries, Forms, Controls,
-  Graphics, Dialogs, StdCtrls, Grids, ExtCtrls, ComCtrls,fpexprpars, claseli,clasematrix;
+  Graphics, Dialogs, StdCtrls, Grids, ExtCtrls, ComCtrls,fpexprpars, claseli;
 
 type
 
@@ -83,6 +83,12 @@ begin
       Result[i]:=arr[i];
 end;
 
+{
+
+
+
+}
+
 
 
 procedure TForm1.btEjecutaClick(Sender: TObject);
@@ -131,7 +137,6 @@ begin
       TDatos.Cells[2,i]:=lineal.errLi.Strings[i];
       end;
 
-  matrix.destroy;
 end;
 
 

@@ -1,13 +1,13 @@
 object Form1: TForm1
-  Left = 960
+  Left = -10
   Height = 1416
-  Top = 144
+  Top = 182
   Width = 1769
   Caption = 'Form1'
   ClientHeight = 1416
   ClientWidth = 1769
   DesignTimePPI = 192
-  LCLVersion = '1.8.2.0'
+  LCLVersion = '1.9.0.0'
   object btExecute: TButton
     Left = 87
     Height = 50
@@ -19,16 +19,16 @@ object Form1: TForm1
   end
   object ediInput: TEdit
     Left = 336
-    Height = 40
+    Height = 44
     Top = 85
     Width = 160
     TabOrder = 1
     Text = '1.5'
   end
   object Chart1: TChart
-    Left = 704
+    Left = 680
     Height = 760
-    Top = 80
+    Top = 85
     Width = 872
     AxisList = <    
       item
@@ -59,11 +59,9 @@ object Form1: TForm1
       'TAChart'
     )
     object Chart1ConstantLine1: TConstantLine
-      Position = 0
     end
     object Chart1ConstantLine2: TConstantLine
       LineStyle = lsVertical
-      Position = 0
     end
     object poli1: TLineSeries
     end

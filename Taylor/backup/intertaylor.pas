@@ -27,11 +27,7 @@ type
     procedure FormDestroy(Sender: TObject);
   private
     Taylor:clTaylor;
-
-
-
   public
-
 
   end;
 

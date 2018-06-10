@@ -1,14 +1,14 @@
 object Form1: TForm1
-  Left = 514
+  Left = 504
   Height = 1025
-  Top = 288
+  Top = 322
   Width = 1086
   Caption = 'Form1'
   ClientHeight = 1025
   ClientWidth = 1086
   DesignTimePPI = 192
   OnCreate = FormCreate
-  LCLVersion = '1.8.2.0'
+  LCLVersion = '1.9.0.0'
   object btnEje: TButton
     Left = 871
     Height = 50
@@ -60,7 +60,7 @@ object Form1: TForm1
   end
   object ediAng: TEdit
     Left = 544
-    Height = 40
+    Height = 44
     Top = 56
     Width = 160
     TabOrder = 3
@@ -68,7 +68,7 @@ object Form1: TForm1
   end
   object ediErr: TEdit
     Left = 544
-    Height = 40
+    Height = 44
     Top = 112
     Width = 160
     TabOrder = 4
@@ -88,7 +88,7 @@ object Form1: TForm1
     ChildSizing.ShrinkVertical = crsScaleChilds
     ChildSizing.Layout = cclLeftToRightThenTopToBottom
     ChildSizing.ControlsPerLine = 1
-    ClientHeight = 117
+    ClientHeight = 116
     ClientWidth = 206
     ItemIndex = 0
     Items.Strings = (
@@ -99,26 +99,26 @@ object Form1: TForm1
   end
   object Label1: TLabel
     Left = 508
-    Height = 32
+    Height = 36
     Top = 64
-    Width = 19
+    Width = 26
     Caption = 'X:'
     ParentColor = False
   end
   object Label2: TLabel
     Left = 472
-    Height = 32
+    Height = 36
     Top = 112
-    Width = 55
+    Width = 75
     Caption = 'Error:'
     ParentColor = False
   end
   object cbOper: TComboBox
     Left = 240
-    Height = 40
+    Height = 46
     Top = 88
     Width = 200
-    ItemHeight = 32
+    ItemHeight = 0
     ItemIndex = 0
     Items.Strings = (
       'Seno'

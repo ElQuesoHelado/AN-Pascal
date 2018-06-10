@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="7">
+      <Unit0>
+        <Filename Value="project1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="29" Y="15"/>
+        <UsageCount Value="21"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="intintegral.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="intIntegral"/>
+        <CursorPos X="12" Y="6"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="claseinter.pas"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="19" Y="22"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="custparse.pas"/>
+        <UnitName Value="custParse"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="7" Y="140"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="../SolucionNoLineales/linealinter.pas"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="49"/>
+        <CursorPos X="7" Y="95"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="/usr/lib/lazarus/lcl/stdctrls.pp"/>
+        <UnitName Value="StdCtrls"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1183"/>
+        <CursorPos X="3" Y="1205"/>
+        <UsageCount Value="10"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="../SistemasEcuaciones/clsistem.pas"/>
+        <UnitName Value="clSistem"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="27" Y="10"/>
+        <UsageCount Value="10"/>
+      </Unit6>
+    </Units>
+    <JumpHistory Count="21" HistoryIndex="20">
+      <Position1>
+        <Filename Value="intintegral.pas"/>
+        <Caret Line="12" Column="21"/>
+      </Position1>
+      <Position2>
+        <Filename Value="intintegral.pas"/>
+        <Caret Line="16" Column="21"/>
+      </Position2>
+      <Position3>
+        <Filename Value="intintegral.pas"/>
+        <Caret Line="17" Column="21"/>
+      </Position3>
+      <Position4>
+        <Filename Value="intintegral.pas"/>
+        <Caret Line="39" Column="16" TopLine="5"/>
+      </Position4>
+      <Position5>
+        <Filename Value="intintegral.pas"/>
+        <Caret Line="46" Column="16" TopLine="5"/>
+      </Position5>
+      <Position6>
+        <Filename Value="intintegral.pas"/>
+        <Caret Line="44" Column="17" TopLine="12"/>
+      </Position6>
+      <Position7>
+        <Filename Value="../SolucionNoLineales/linealinter.pas"/>
+        <Caret Line="95" Column="7" TopLine="85"/>
+      </Position7>
+      <Position8>
+        <Filename Value="intintegral.pas"/>
+        <Caret Line="8" Column="87"/>
+      </Position8>
+      <Position9>
+        <Filename Value="claseinter.pas"/>
+        <Caret Line="20" Column="40" TopLine="6"/>
+      </Position9>
+      <Position10>
+        <Filename Value="claseinter.pas"/>
+        <Caret Line="23" Column="18" TopLine="2"/>
+      </Position10>
+      <Position11>
+        <Filename Value="claseinter.pas"/>
+        <Caret Line="42" Column="29" TopLine="20"/>
+      </Position11>
+      <Position12>
+        <Filename Value="intintegral.pas"/>
+        <Caret Line="15" Column="23"/>
+      </Position12>
+      <Position13>
+        <Filename Value="claseinter.pas"/>
+        <Caret Line="19" Column="12"/>
+      </Position13>
+      <Position14>
+        <Filename Value="intintegral.pas"/>
+        <Caret Line="12" Column="19" TopLine="8"/>
+      </Position14>
+      <Position15>
+        <Filename Value="claseinter.pas"/>
+        <Caret Line="89" Column="16" TopLine="53"/>
+      </Position15>
+      <Position16>
+        <Filename Value="intintegral.pas"/>
+        <Caret Line="43" Column="11" TopLine="16"/>
+      </Position16>
+      <Position17>
+        <Filename Value="intintegral.pas"/>
+        <Caret Line="32" Column="23" TopLine="16"/>
+      </Position17>
+      <Position18>
+        <Filename Value="intintegral.pas"/>
+        <Caret Line="28" Column="46" TopLine="17"/>
+      </Position18>
+      <Position19>
+        <Filename Value="intintegral.pas"/>
+        <Caret Line="48" Column="19" TopLine="21"/>
+      </Position19>
+      <Position20>
+        <Filename Value="intintegral.pas"/>
+        <Caret Line="49" Column="19" TopLine="21"/>
+      </Position20>
+      <Position21>
+        <Filename Value="intintegral.pas"/>
+        <Caret Line="46" Column="20" TopLine="29"/>
+      </Position21>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

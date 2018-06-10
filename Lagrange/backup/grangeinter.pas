@@ -64,49 +64,50 @@ var
 
 begin
   lagrange := TClGrange.Create;
-  lagrange2 := TClGrange.Create;
+  //lagrange2 := TClGrange.Create;
   intersec := clLinea.Create;
 
   setLength(lagrange.Data, sgData.RowCount - 1, 2);
-  setLength(lagrange2.Data, sgData.RowCount - 1, 2);
+  //setLength(lagrange2.Data, sgData.RowCount - 1, 2);
   for i := 0 to sgData.RowCount - 2 do
   begin
     lagrange.Data[i][0] := StrToFloat(sgData.cells[0, i + 1]);
     lagrange.Data[i][1] := StrToFloat(sgData.cells[1, i + 1]);
-    lagrange2.Data[i][0] := StrToFloat(sgData1.cells[0, i + 1]);
-    lagrange2.Data[i][1] := StrToFloat(sgData1.cells[1, i + 1]);
+    //lagrange2.Data[i][0] := StrToFloat(sgData1.cells[0, i + 1]);
+    //lagrange2.Data[i][1] := StrToFloat(sgData1.cells[1, i + 1]);
   end;
 
   lagrange.getxn(StrToFloat(ediInput.Text));
   lagrange.Execute();
-  lagrange2.getxn(StrToFloat(ediInput.Text));
-  lagrange2.Execute();
+  //lagrange2.getxn(StrToFloat(ediInput.Text));
+  //lagrange2.Execute();
 
   j := -3;
   while (j < N - 1) do
   begin
     xn := MIN + (MAX - MIN) * j / (N - 1);
     poli1.AddXY(xn, lagrange.Grapar.calPuntos(xn, lagrange.polin));
-    poli2.AddXY(xn, lagrange2.Grapar.calPuntos(xn, lagrange2.polin));
+    //poli2.AddXY(xn, lagrange2.Grapar.calPuntos(xn, lagrange2.polin));
     j += 1;
   end;
 
 
   poli1Puntos.showLines := False;
-  poli2Puntos.showLines := False;
+  //poli2Puntos.showLines := False;
 
   for i := 0 to length(lagrange.Data) - 1 do
   begin
     poli1Puntos.AddXY(lagrange.Data[i][0], lagrange.Grapar.calPuntos(
       lagrange.Data[i][0], lagrange.polin));
-    poli2Puntos.AddXY(lagrange2.Data[i][0], lagrange2.Grapar.calPuntos(
-      lagrange2.Data[i][0], lagrange2.polin));
+    //poli2Puntos.AddXY(lagrange2.Data[i][0], lagrange2.Grapar.calPuntos(
+      //lagrange2.Data[i][0], lagrange2.polin));
   end;
 
 
-  intersec.setEcua('(' + lagrange.polin + ')-(' + lagrange2.polin + ')');
-  intersec.setMetod(1);
-  intersec.setError(0.0001);
+  //intersec.setEcua('(' + lagrange.polin + ')-(' + lagrange2.polin + ')');
+  //intersec.setMetod(1);
+  //intersec.setError(0.0001);
+{
 
   //[-3,-1]
   intersec.setInterv(-3, -1);
@@ -135,6 +136,7 @@ begin
   meResult.Lines.Add(lagrange.polin);
   meResult.Lines.Add(lagrange2.polin);
   meResult.Lines.Add(FloatToStr(lagrange.resultado));
+ }
 
 
 

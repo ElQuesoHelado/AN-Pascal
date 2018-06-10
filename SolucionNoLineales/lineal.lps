@@ -2,7 +2,7 @@
 <CONFIG>
   <ProjectSession>
     <PathDelim Value="\"/>
-    <Version Value="10"/>
+    <Version Value="11"/>
     <BuildModes Active="Default"/>
     <Units Count="14">
       <Unit0>
@@ -19,8 +19,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="80"/>
-        <CursorPos X="53" Y="96"/>
+        <TopLine Value="167"/>
+        <CursorPos X="20" Y="185"/>
         <UsageCount Value="208"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -29,8 +29,8 @@
         <Filename Value="claseli.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="236"/>
-        <CursorPos X="37" Y="71"/>
+        <TopLine Value="86"/>
+        <CursorPos X="41" Y="98"/>
         <UsageCount Value="208"/>
         <Loaded Value="True"/>
       </Unit2>
@@ -104,11 +104,10 @@
       </Unit11>
       <Unit12>
         <Filename Value="clasematrix.pas"/>
-        <EditorIndex Value="2"/>
-        <TopLine Value="392"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="362"/>
         <CursorPos X="21" Y="362"/>
         <UsageCount Value="91"/>
-        <Loaded Value="True"/>
       </Unit12>
       <Unit13>
         <Filename Value="..\Matrix\matrinter.pas"/>
@@ -119,119 +118,51 @@
         <UsageCount Value="4"/>
       </Unit13>
     </Units>
-    <JumpHistory Count="28" HistoryIndex="27">
+    <JumpHistory Count="10" HistoryIndex="9">
       <Position1>
-        <Filename Value="clasematrix.pas"/>
-        <Caret Line="203" Column="3" TopLine="178"/>
-      </Position1>
-      <Position2>
-        <Filename Value="clasematrix.pas"/>
-        <Caret Line="204" Column="25" TopLine="178"/>
-      </Position2>
-      <Position3>
-        <Filename Value="clasematrix.pas"/>
-        <Caret Line="203" Column="3" TopLine="178"/>
-      </Position3>
-      <Position4>
-        <Filename Value="clasematrix.pas"/>
-        <Caret Line="37" Column="19"/>
-      </Position4>
-      <Position5>
-        <Filename Value="clasematrix.pas"/>
-        <Caret Line="304" Column="11" TopLine="279"/>
-      </Position5>
-      <Position6>
-        <Filename Value="clasematrix.pas"/>
-        <Caret Line="253" Column="17" TopLine="228"/>
-      </Position6>
-      <Position7>
-        <Filename Value="clasematrix.pas"/>
-        <Caret Line="304" Column="11" TopLine="279"/>
-      </Position7>
-      <Position8>
-        <Filename Value="clasematrix.pas"/>
-        <Caret Line="253" Column="17" TopLine="228"/>
-      </Position8>
-      <Position9>
-        <Filename Value="clasematrix.pas"/>
-        <Caret Line="231" Column="3" TopLine="195"/>
-      </Position9>
-      <Position10>
-        <Filename Value="clasematrix.pas"/>
-        <Caret Line="238" Column="24" TopLine="207"/>
-      </Position10>
-      <Position11>
-        <Filename Value="clasematrix.pas"/>
-        <Caret Line="225" Column="21" TopLine="198"/>
-      </Position11>
-      <Position12>
-        <Filename Value="clasematrix.pas"/>
-        <Caret Line="235" Column="14" TopLine="212"/>
-      </Position12>
-      <Position13>
-        <Filename Value="clasematrix.pas"/>
-        <Caret Line="276" Column="15" TopLine="233"/>
-      </Position13>
-      <Position14>
-        <Filename Value="clasematrix.pas"/>
-        <Caret Line="264" Column="17" TopLine="240"/>
-      </Position14>
-      <Position15>
-        <Filename Value="clasematrix.pas"/>
-        <Caret Line="266" Column="31" TopLine="238"/>
-      </Position15>
-      <Position16>
-        <Filename Value="clasematrix.pas"/>
-        <Caret Line="280" Column="29" TopLine="248"/>
-      </Position16>
-      <Position17>
-        <Filename Value="clasematrix.pas"/>
-        <Caret Line="274" Column="15" TopLine="254"/>
-      </Position17>
-      <Position18>
-        <Filename Value="clasematrix.pas"/>
-        <Caret Line="280" Column="28" TopLine="260"/>
-      </Position18>
-      <Position19>
-        <Filename Value="clasematrix.pas"/>
-        <Caret Line="294" Column="40" TopLine="266"/>
-      </Position19>
-      <Position20>
         <Filename Value="linealinter.pas"/>
         <Caret Line="143" Column="38" TopLine="111"/>
-      </Position20>
-      <Position21>
+      </Position1>
+      <Position2>
         <Filename Value="linealinter.pas"/>
         <Caret Line="124" Column="25"/>
-      </Position21>
-      <Position22>
+      </Position2>
+      <Position3>
         <Filename Value="linealinter.pas"/>
         <Caret Line="126" Column="25" TopLine="81"/>
-      </Position22>
-      <Position23>
+      </Position3>
+      <Position4>
         <Filename Value="linealinter.pas"/>
         <Caret Line="127" Column="25" TopLine="127"/>
-      </Position23>
-      <Position24>
+      </Position4>
+      <Position5>
         <Filename Value="linealinter.pas"/>
         <Caret Line="126" Column="26" TopLine="81"/>
-      </Position24>
-      <Position25>
+      </Position5>
+      <Position6>
         <Filename Value="linealinter.pas"/>
         <Caret Line="125" Column="26" TopLine="80"/>
-      </Position25>
-      <Position26>
+      </Position6>
+      <Position7>
         <Filename Value="linealinter.pas"/>
         <Caret Line="276" Column="3" TopLine="248"/>
-      </Position26>
-      <Position27>
+      </Position7>
+      <Position8>
         <Filename Value="linealinter.pas"/>
         <Caret Line="275" Column="3" TopLine="247"/>
-      </Position27>
-      <Position28>
+      </Position8>
+      <Position9>
         <Filename Value="linealinter.pas"/>
         <Caret Line="8" Column="25" TopLine="8"/>
-      </Position28>
+      </Position9>
+      <Position10>
+        <Filename Value="linealinter.pas"/>
+        <Caret Line="89" Column="9" TopLine="80"/>
+      </Position10>
     </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode="default"/>
+    </RunParams>
   </ProjectSession>
 </CONFIG>

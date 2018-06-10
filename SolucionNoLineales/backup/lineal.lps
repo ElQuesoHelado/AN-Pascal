@@ -18,8 +18,9 @@
         <ComponentName Value="Form1"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <TopLine Value="5"/>
-        <CursorPos X="21" Y="93"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="80"/>
+        <CursorPos X="53" Y="96"/>
         <UsageCount Value="208"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -28,7 +29,7 @@
         <Filename Value="claseli.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="132"/>
+        <TopLine Value="236"/>
         <CursorPos X="37" Y="71"/>
         <UsageCount Value="208"/>
         <Loaded Value="True"/>
@@ -103,10 +104,9 @@
       </Unit11>
       <Unit12>
         <Filename Value="clasematrix.pas"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="354"/>
-        <CursorPos X="21" Y="373"/>
+        <TopLine Value="392"/>
+        <CursorPos X="21" Y="362"/>
         <UsageCount Value="91"/>
         <Loaded Value="True"/>
       </Unit12>
