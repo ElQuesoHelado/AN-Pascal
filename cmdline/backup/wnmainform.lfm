@@ -1,16 +1,16 @@
 object WMainForm: TWMainForm
-  Left = 514
+  Left = 587
   Height = 1243
-  Top = 269
+  Top = 285
   Width = 2210
   Caption = 'TCmdBox Example Application'
   ClientHeight = 1243
   ClientWidth = 2210
-  DesignTimePPI = 192
+  DesignTimePPI = 200
   OnCreate = FormCreate
   OnDestroy = FormDestroy
   Position = poScreenCenter
-  LCLVersion = '1.8.2.0'
+  LCLVersion = '1.8.4.0'
   object RightPanel: TPanel
     Left = 1328
     Height = 1243
@@ -22,9 +22,9 @@ object WMainForm: TWMainForm
     TabOrder = 0
     object Label1: TLabel
       Left = 16
-      Height = 37
+      Height = 33
       Top = 8
-      Width = 91
+      Width = 101
       Caption = 'History'
       ParentColor = False
     end
@@ -63,8 +63,8 @@ object WMainForm: TWMainForm
     end
     object CbSetCaret: TComboBox
       Left = 16
-      Height = 49
-      Top = 1142
+      Height = 45
+      Top = 1146
       Width = 844
       Anchors = [akLeft, akRight, akBottom]
       ItemHeight = 0
@@ -91,9 +91,9 @@ object WMainForm: TWMainForm
     end
     object cbWordWrap: TCheckBox
       Left = 18
-      Height = 39
-      Top = 1068
-      Width = 156
+      Height = 37
+      Top = 1070
+      Width = 173
       Anchors = [akLeft, akBottom]
       Caption = 'WordWrap'
       Checked = True
@@ -102,9 +102,9 @@ object WMainForm: TWMainForm
       TabOrder = 5
     end
     object Chart1: TChart
-      Left = 0
+      Left = 8
       Height = 752
-      Top = 240
+      Top = 224
       Width = 848
       AxisList = <      
         item
@@ -165,9 +165,9 @@ object WMainForm: TWMainForm
     ResizeAnchor = akRight
   end
   object CmdBox: TCmdBox
-    Left = 8
-    Height = 1224
-    Top = 0
+    Left = -8
+    Height = 1243
+    Top = 88
     Width = 1320
     Align = alCustom
     PopupMenu = PopupMenu1
@@ -178,8 +178,7 @@ object WMainForm: TWMainForm
     CaretYShift = 3
     OnInput = CmdBoxInput
     LineCount = 1000
-    Font.Color = clSilver
-    Font.Height = -24
+    Font.Height = -35
     Font.Name = 'Sans'
     BackGroundColor = clNavy
     TabWidth = 60

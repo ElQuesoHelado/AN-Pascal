@@ -53,11 +53,13 @@ type
     Label1: TLabel;
     HistoryList: TListBox;
     MenuItem1: TMenuItem;
+    Panel1: TPanel;
     PopupMenu1: TPopupMenu;
     RightPanel: TPanel;
     Splitter1: TSplitter;
     ReaderTimer: TTimer;
     ProcessTimer: TTimer;
+    Splitter2: TSplitter;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);

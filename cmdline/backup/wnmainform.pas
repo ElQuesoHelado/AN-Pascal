@@ -339,8 +339,8 @@ begin
             lineal.setMetod(valParse[3]);
 
           lineal.seth(hglobal);
-          lineal.getFunc(valParse[0]);
           lineal.getInterv(StrToFloat(valParse[1]), StrToFloat(valParse[2]));
+          lineal.getFunc(valParse[0]);
           graficar(0, 0, valParse[0], False);
           res := floattostr(lineal.Execute());
         end
