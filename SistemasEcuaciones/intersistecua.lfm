@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 198
+  Left = 200
   Height = 854
-  Top = 328
+  Top = 522
   Width = 1370
   Caption = 'Form1'
   ClientHeight = 854
@@ -18,9 +18,9 @@ object Form1: TForm1
     TabOrder = 0
   end
   object sgResults: TStringGrid
-    Left = 48
+    Left = 40
     Height = 480
-    Top = 224
+    Top = 352
     Width = 1112
     ColCount = 3
     FixedCols = 0
@@ -44,28 +44,29 @@ object Form1: TForm1
     )
   end
   object meEcua: TMemo
-    Left = 528
-    Height = 170
-    Top = 8
-    Width = 400
+    Left = 312
+    Height = 304
+    Top = 24
+    Width = 664
     Lines.Strings = (
       'power(x,2)+power(y,2)-5'
       'power(x,2)-power(y,2)-1'
     )
+    OnChange = meEcuaChange
     TabOrder = 2
   end
   object ediError: TEdit
-    Left = 368
-    Height = 40
+    Left = 133
+    Height = 43
     Top = 32
     Width = 136
     TabOrder = 3
     Text = '0.00001'
   end
   object sgVar: TStringGrid
-    Left = 944
+    Left = 992
     Height = 160
-    Top = 8
+    Top = 40
     Width = 208
     AutoFillColumns = True
     ColCount = 2
@@ -75,8 +76,8 @@ object Form1: TForm1
     RowCount = 2
     TabOrder = 4
     ColWidths = (
-      102
-      102
+      103
+      103
     )
     Cells = (
       4
@@ -95,7 +96,7 @@ object Form1: TForm1
     )
   end
   object btLess: TButton
-    Left = 1160
+    Left = 1208
     Height = 56
     Top = 32
     Width = 136
@@ -104,9 +105,9 @@ object Form1: TForm1
     TabOrder = 5
   end
   object btMore: TButton
-    Left = 1160
+    Left = 1208
     Height = 57
-    Top = 112
+    Top = 111
     Width = 136
     Caption = 'btMore'
     OnClick = btMoreClick

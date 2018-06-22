@@ -252,6 +252,27 @@ x=2
 y=1
 
 
+Otro Problema
+power(x,2)+3*power(y,2)+exp(z)+w-4.71828183
+3*sen(x+y)+ln(y-w)
+power(w,2)+arctan(x)-(pi/4)-4
+5*y+3*w+ln(z+x+y)+11
+
+
+x=1
+y=-1
+z=1
+w=-2
+
+
+
+2.35*exp(-3)*power(x+y,1.75)-75+z
+4.67*exp(-3)*power(x,1.75)+20-z
+3.72*exp(-2)*power(y,1.75)+15-z
+
+x=16
+y=7
+z=50
 
 
  }

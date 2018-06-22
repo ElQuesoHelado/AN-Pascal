@@ -148,7 +148,7 @@ end;
 procedure clMatr.inv();
 var
   i, j, k, p, noZero: integer;
-  valtemp, multi: real;
+  valtemp, multi,mayor: real;
   operar, iden: TArr2D;
 begin
   setLength(operar, lenMatRows, lenMatCols);
@@ -184,17 +184,45 @@ j,k |  0     -1       6       4  |    1      0      0      0  |
   for i := 0 to lenMatRows - 1 do //columna a operar
     //for i := 0 to 0 do //columna a operar
   begin
+    //Pivoting
     //Si es 0 busca una columna para cambiar
-    if (operar[i][i] = 0) then
+    //if (operar[i][i] = 0) then
+    //begin
+    //  //busca el mayor
+    //  for k := i + 1 to lenMatRows - 1 do
+    //    if (operar[k][i] <> 0) then
+    //    begin
+    //      noZero := k;
+    //      break;
+    //    end;
+    //  //Cambio de filas
+    //  for k := 0 to lenMatRows - 1 do
+    //  begin
+    //    valtemp := operar[i][k];
+    //    operar[i][k] := operar[noZero][k];
+    //    operar[noZero][k] := valtemp;
+    //    //Cambio de la identidad
+    //    valtemp := iden[i][k];
+    //    iden[i][k] := iden[noZero][k];
+    //    iden[noZero][k] := valtemp;
+    //
+    //  end;
+    //end;
+    //
+
+    //Pivoting buscando el mayor
+
+    //El pivot es el mayor
+    noZero:=i;
+
+    for k:=i+1 to lenMatRows -1 do
+    if(operar[k][i]>operar[i][i])then
+    noZero:=k;
+
+    //el cambio
+    if(noZero<>i)then
     begin
-      for k := i + 1 to lenMatRows - 1 do
-        if (operar[k][i] <> 0) then
-        begin
-          noZero := k;
-          break;
-        end;
-      //Cambio de filas
-      for k := 0 to lenMatRows - 1 do
+    for k := 0 to lenMatRows - 1 do
       begin
         valtemp := operar[i][k];
         operar[i][k] := operar[noZero][k];
@@ -206,6 +234,13 @@ j,k |  0     -1       6       4  |    1      0      0      0  |
 
       end;
     end;
+
+
+
+
+
+
+
 
     //El pivot se iguala a 1
     valtemp := operar[i][i];

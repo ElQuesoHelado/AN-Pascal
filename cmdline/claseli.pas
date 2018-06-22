@@ -11,23 +11,22 @@ type
   clLinea = class
   private
     resAct, resPast, InteIzq,//Intervalo
-    InteDer, errAllo,h: real;
+    InteDer, errAllo, h: real;
     contIte,//Contador limite de iteraciones,
     Metodo: integer;
-    existe: integer;
-    ecua: string;
+
+    ecua, ecuainter: string;
 
     function bisec(a: real; b: real): real;
     function falPos(a: real; b: real): real;
     function NewRaph(a: real): real;
     function Secante(a: real): real;
-    function PuntFij(a: real): real;
     function bolzano(izq: real; dere: real): real;
 
   public
-    ecGraf: real;
-    Temporal: real;
-    ResLi: TStringList;//Lista de results y errors finales
+    ecGraf, resultado: real;
+    Temporal, errAllow: real;
+    ResLi, Resliy: TStringList;//Lista de results y errors finales
     errLi: TStringList;
     FParser: TFPExpressionParser;
     FParserSist: TFPExpressionParser;
@@ -36,12 +35,14 @@ type
     function aproximar(izq: real; dere: real): real;
     function finalizar(xn: real): real;
 
-    function execute(): real;
+    function Execute(): boolean;
     procedure seth(x: real);
     procedure getInterv(x: real; y: real);
     procedure setMetod(x: string);
     procedure getFunc(x: string);
+    procedure getFuncInter(x: string);
     function ecuacion(xn: real): real;
+    function ecuacionInter(xn: real): real;
     constructor Create;
     destructor Destroy; override;
   end;
@@ -59,7 +60,7 @@ begin
   //Se agrega un elemento 0
   //FParser:=TFpExpressionParser.Create(nil);
   ResLi := TStringList.Create;
-  ResLi.Add('');
+  ResLiy := TStringList.Create;
   errLi := TStringList.Create;
   errLi.Add('');
   //Creacion del parser
@@ -67,8 +68,8 @@ begin
   contite := 0;
   resAct := 2;
   resPast := 1;
-  existe := 1;
-  h:=0.0001;
+  h := 0.001;
+  metodo := 0;
 
 end;
 
@@ -76,6 +77,7 @@ destructor clLinea.Destroy;
 begin
   //Se liberan las dos listas
   ResLi.Free;
+  ResLiy.Free;
   errLi.Free;
 
 end;
@@ -117,6 +119,21 @@ begin     //El parser resuelve la ecuacion
   //2*power(x,3)-2*power(x,2)
 end;
 
+function clLinea.ecuacionInter(xn: real): real;
+begin     //El parser resuelve la ecuacion
+  FParser := TFpExpressionParser.Create(nil);
+  try
+    FParser.BuiltIns := [bcMath, bcConversion];
+    FParser.Identifiers.AddFunction('power', 'F', 'FF', @elevado);
+    FParser.Identifiers.AddFloatVariable('x', xn);//se usa la variable seteada
+    FParser.Expression := ecuainter;//la funcion se obtiene por interfaz
+    Result := FParser.Evaluate.ResFloat;
+    ecGraf := Result;
+  finally
+    FParser.Free;
+  end;
+end;
+
 
 //Los metodos
 function clLinea.bisec(a: real; b: real): real;
@@ -142,11 +159,6 @@ begin  //h=error/10
     (ecuacion(a + (h / 10)) - ecuacion(a - (h / 10)));
 end;
 
-function clLinea.PuntFij(a: real): real;
-begin
-  Result := ecuacion(a);
-end;
-
 //Evalua bolzano
 function clLinea.bolzano(izq: real; dere: real): real;
 begin
@@ -168,163 +180,163 @@ end;
 
 procedure clLinea.setMetod(x: string);
 begin
-  //Metodo := x;
+  Metodo := StrToInt(x);
 end;
 
 procedure clLinea.getFunc(x: string);
 begin
   ecua := x;
+  ecuaInter := x;
 end;
 
-function clLinea.Execute(): real;
+procedure clLinea.getFuncInter(x: string);
+begin
+  ecuaInter := x;
+end;
+
+
+function clLinea.Execute(): boolean;
 var
-  resParcial: real;
+  resParcial, hpaso, a, b: real;
+  i, n: integer;
 begin
 
-  //llama biseccion para aproximar
-  resParcial := 0;
-
-  if (ecuacion(InteIzq)*ecuacion(InteDer)>0.0) then//quit si no existe
+  Result := True;
+  if (ecuacion(InteIzq) * ecuacion(InteDer) > 0.0) then//si no existe hay raiz
   begin
-  Result := 0;
-  existe:=0;
-  exit;
+    Result := False;
+    exit;
   end;
-  existe:=1;
-  //if existe then aproxima
-  resParcial := aproximar(InteIzq, InteDer);
 
-  //llama secante
-  Result:=finalizar(resParcial);
-  //Result:=resParcial;
+  i := 0;
+  resParcial := 0;
+  a := InteIzq;
+  b := InteIzq + h;
+  hpaso := 0.001;
+  if (metodo = 0) then
+  begin
 
+    repeat
+
+      if (ecuacion(a) * ecuacion(b) > 0.0) then
+      begin
+        a += hpaso;
+        b += hpaso;
+        continue;
+      end;
+
+      //llama biseccion para aproximar
+      errAllow := 0.01;
+      resParcial := aproximar(a, b);
+
+      //llama secante y termina de aproximar
+      errAllow := h;
+      resultado := finalizar(resParcial);
+      resli.Add(FloatToStr(resultado));
+      a += hpaso;
+      b += hpaso;
+
+    until (b >= InteDer) or (a >= InteDer);
+
+  end
+  else if (metodo = 1) then //biseccion
+  begin
+    errAllow := h;
+    repeat
+
+      if (ecuacion(a) * ecuacion(b) > 0.0) then
+      begin
+        a += hpaso;
+        b += hpaso;
+        continue;
+      end;
+
+      //llama biseccion para aproximar
+      resultado := aproximar(a, b);
+      resli.Add(FloatToStr(resultado));
+      Resliy.add(FloatToStr(ecuacionInter(resultado)));
+      a += hpaso;
+      b += hpaso;
+    until (b >= InteDer) or (a >= InteDer);
+  end
+  else if (metodo = 2) then //newton
+  begin
+    Result := False;
+    exit;
+  end
+  else if (metodo = 3) then //secante
+  begin
+    errAllow := h;
+    repeat
+
+      if (ecuacion(a) * ecuacion(b) > 0.0) then
+      begin
+        a += hpaso;
+        b += hpaso;
+        continue;
+      end;
+
+
+      //llama secante y termina de aproximar
+      resultado := finalizar(a);
+      resli.Add(FloatToStr(resultado));
+      a += hpaso;
+      b += hpaso;
+
+    until (b >= InteDer) or (a >= InteDer);
+  end;
 end;
-
 
 
 function clLinea.aproximar(izq: real; dere: real): real;
 var
   iteracion: integer;
-  mitad,mitadPast,errAllow,errAct: real;
+  mitad, mitadPast, errAct: real;
 begin
   iteracion := 0;
-  errAllow:=0.01;
-  errAct:=0.1;
-  mitadPast:=dere;
+  errAct := 0.1;
+  mitadPast := dere;
   resPast := 0;
 
   //se halla 1 iteracion fuera del bucle
-  mitadPast:=bisec(izq,dere);
+  mitadPast := bisec(izq, dere);
   if (bolzano(izq, mitadPast) < 0.0) then
-  dere:=mitadPast
+    dere := mitadPast
   else
-  izq := mitadPast;
+    izq := mitadPast;
 
   //comienza bucle
   repeat
-    mitad:=bisec(izq,dere);
-    errAct:=abs(mitad - mitadPast);
+    mitad := bisec(izq, dere);
+    errAct := abs(mitad - mitadPast);
     if (bolzano(izq, mitad) < 0.0) then
-    dere:=mitad
+      dere := mitad
     else
-    izq := mitad;
+      izq := mitad;
 
-    mitadPast:=mitad;
-    iteracion+=1;
+    mitadPast := mitad;
+    iteracion += 1;
   until (errAct < errAllow) or (contIte >= maxIte);
 
-  Result:=mitad;
+  Result := mitad;
 end;
-
 
 
 function clLinea.finalizar(xn: real): real;
 var
-  resa,resp,errAct,DEBUG: real;
+  resa, resp, errAct: real;
 begin
 
-  resp:=0;
-  resa:=xn;
-  errAct:=0;
-
-  DEBUG:=0;
+  resp := 0;
+  resa := xn;
+  errAct := 0;
 
   repeat
-    resp:=resa;
-    resa:=secante(resa);
-    errAct:=abs(resa-resp);
-    DEBUG+=1;
-  until (errAct <= h) ;
-  Result:=resa;
-  //Result:=errAct;
-  //Result:=resp;
+    resp := resa;
+    resa := secante(resa);
+    errAct := abs(resa - resp);
+  until (errAct <= h);
+  Result := resa;
 end;
-
-//raiz(2*power(x,3)+2,-1.5,-0.25)
-
-
-//function clLinea.principal(xn:Real):Real;
-//begin
-//     contIte:=contIte+1;
-//     resPast:=resAct;
-//     case Metodo of
-//     2:resAct:=NewRaph(xn);
-//     3:resAct:=Secante(xn);
-//     4:resAct:=PuntFij(xn);
-//     end;
-//     Resli.Add(FloatToStr(resAct));
-//     errLi.Add(FloatToStr(abs(resAct-resPast)));
-//     if(abs(resAct-resPast)<errAllo) or (contIte>=maxIte) then
-//     begin
-//       Result:=resAct;
-//       exit
-//     end;
-//     Result:=principal(resAct);
-//end;
-
-
-
-//function clLinea.execute():Real;
-//begin
-//     if (Metodo<=1) then     //Bisec y Falsa pos
-//     begin
-//        Result:=principal(InteIzq,InteDer);//Mismos argumetos overloading
-//        //errLi.Strings[1]('---');
-//     end
-//     else
-//     begin//New/Raph, Secante, Punto fijo
-//        resAct:=InteIzq;
-//        Resli.Add(FloatToStr(InteIzq));
-//        errLi.Add('---');
-//        Result:=principal(InteIzq);
-//     end;
-//end;
-
-//function clLinea.principal(izq: Real; dere:Real):Real;
-//begin
-//     contIte:=contIte+1;
-//     resPast:=resAct;
-//     case Metodo of
-//     0: resAct:=bisec(izq,dere);
-//     1: resAct:=falPos(izq,dere);
-//     end;
-
-//     //resAct:=actMetod(izq,dere);
-//     Resli.Add(FloatToStr(resAct));
-//     errLi.Add(FLoatToStr(abs(resAct-resPast)));
-//     if(abs(resAct-resPast)<errAllo) or (contIte>=maxIte) then
-//     begin
-//       Result:=resAct;
-//       exit
-//     end;
-//     if (bolzano(izq,resAct)<0.0) then
-//        Result:=principal(izq,resAct)
-//        //Result:=principal(actMetod(izq,resAct))
-//     else
-//        Result:=principal(resAct,dere);
-//        //Result:=principal(actMetod(resAct,dere));
-//end;
-
-
 
 end.

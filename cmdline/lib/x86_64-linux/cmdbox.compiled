@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CONFIG>
-  <Compiler Value="/usr/bin/fpc" Date="1520294800"/>
-  <Params Value=" -MObjFPC -Scgi -Cg -O1 -g -gl -l -vewnhibq &quot;-Fu/home/jjac1999/Downloads/lazarus/components/cmdline/C:/Dokumente und Einstellungen/Nilius/Desktop/laz/CmdLine&quot; -Fu/home/jjac1999/Downloads/lazarus/packager/units/x86_64-linux -Fu/home/jjac1999/Downloads/lazarus/components/lazutils/lib/x86_64-linux -Fu/home/jjac1999/Downloads/lazarus/lcl/units/x86_64-linux -Fu/home/jjac1999/Downloads/lazarus/lcl/units/x86_64-linux/gtk2 -Fu/home/jjac1999/Downloads/lazarus/components/cmdline/ -FU/home/jjac1999/Downloads/lazarus/components/cmdline/lib/x86_64-linux/ -dLCL -dLCLgtk2 cmdbox.pas"/>
+  <Compiler Value="/usr/bin/fpc" Date="1524406223"/>
+  <Params Value=" -MObjFPC -Scgi -Cg -O1 -g -gl -l -vewnhibq &quot;-Fu/usr/lib/lazarus/1.8.2/components/cmdline/C:/Dokumente und Einstellungen/Nilius/Desktop/laz/CmdLine&quot; -Fu/usr/lib/lazarus/1.8.2/packager/units/x86_64-linux -Fu/usr/lib/lazarus/1.8.2/components/lazutils/lib/x86_64-linux -Fu/usr/lib/lazarus/1.8.2/lcl/units/x86_64-linux -Fu/usr/lib/lazarus/1.8.2/lcl/units/x86_64-linux/gtk2 -Fu/usr/lib/lazarus/1.8.2/components/cmdline/ -FU/usr/lib/lazarus/1.8.2/components/cmdline/lib/x86_64-linux/ -dLCL -dLCLgtk2 cmdbox.pas"/>
 </CONFIG>

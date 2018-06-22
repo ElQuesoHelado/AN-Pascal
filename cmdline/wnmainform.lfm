@@ -1,38 +1,38 @@
 object WMainForm: TWMainForm
-  Left = 587
-  Height = 1243
-  Top = 285
-  Width = 2210
+  Left = 399
+  Height = 1589
+  Top = 128
+  Width = 1593
   Caption = 'TCmdBox Example Application'
-  ClientHeight = 1243
-  ClientWidth = 2210
-  DesignTimePPI = 200
+  ClientHeight = 1589
+  ClientWidth = 1593
+  DesignTimePPI = 192
   OnCreate = FormCreate
   OnDestroy = FormDestroy
   Position = poScreenCenter
-  LCLVersion = '1.8.4.0'
+  LCLVersion = '1.8.2.0'
   object RightPanel: TPanel
-    Left = 1328
-    Height = 1243
+    Left = 1344
+    Height = 1589
     Top = 0
-    Width = 876
+    Width = 243
     Align = alRight
-    ClientHeight = 1243
-    ClientWidth = 876
+    ClientHeight = 1589
+    ClientWidth = 243
     TabOrder = 0
     object Label1: TLabel
       Left = 16
-      Height = 33
+      Height = 37
       Top = 8
-      Width = 101
+      Width = 91
       Caption = 'History'
       ParentColor = False
     end
     object Button1: TButton
       Left = 16
       Height = 25
-      Top = 1203
-      Width = 844
+      Top = 1549
+      Width = 211
       Anchors = [akLeft, akRight, akBottom]
       BorderSpacing.InnerBorder = 4
       Caption = 'End Programm'
@@ -41,20 +41,20 @@ object WMainForm: TWMainForm
     end
     object HistoryList: TListBox
       Left = 22
-      Height = 98
+      Height = 444
       Top = 64
-      Width = 838
+      Width = 205
       Anchors = [akTop, akLeft, akRight, akBottom]
       ItemHeight = 0
-      ScrollWidth = 836
+      ScrollWidth = 203
       TabOrder = 1
       TopIndex = -1
     end
     object Button2: TButton
       Left = 16
       Height = 25
-      Top = 1018
-      Width = 844
+      Top = 1364
+      Width = 211
       Anchors = [akLeft, akRight, akBottom]
       BorderSpacing.InnerBorder = 4
       Caption = 'Clear'
@@ -63,9 +63,9 @@ object WMainForm: TWMainForm
     end
     object CbSetCaret: TComboBox
       Left = 16
-      Height = 45
-      Top = 1146
-      Width = 844
+      Height = 49
+      Top = 1488
+      Width = 211
       Anchors = [akLeft, akRight, akBottom]
       ItemHeight = 0
       ItemIndex = 0
@@ -82,8 +82,8 @@ object WMainForm: TWMainForm
     object Button3: TButton
       Left = 16
       Height = 25
-      Top = 1050
-      Width = 844
+      Top = 1396
+      Width = 211
       Anchors = [akLeft, akRight, akBottom]
       Caption = 'Process'
       OnClick = Button3Click
@@ -91,9 +91,9 @@ object WMainForm: TWMainForm
     end
     object cbWordWrap: TCheckBox
       Left = 18
-      Height = 37
-      Top = 1070
-      Width = 173
+      Height = 39
+      Top = 1414
+      Width = 156
       Anchors = [akLeft, akBottom]
       Caption = 'WordWrap'
       Checked = True
@@ -101,11 +101,67 @@ object WMainForm: TWMainForm
       State = cbChecked
       TabOrder = 5
     end
+  end
+  object Splitter1: TSplitter
+    Left = 1587
+    Height = 1589
+    Top = 0
+    Width = 6
+    Align = alRight
+    Beveled = True
+    ResizeAnchor = akRight
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 1589
+    Top = 0
+    Width = 1344
+    Align = alClient
+    Caption = 'Panel1'
+    ClientHeight = 1589
+    ClientWidth = 1344
+    TabOrder = 2
+    object Splitter2: TSplitter
+      Cursor = crVSplit
+      Left = 1
+      Height = 43
+      Top = 809
+      Width = 1342
+      Align = alTop
+      ResizeAnchor = akTop
+    end
+    object CmdBox: TCmdBox
+      Left = 1
+      Height = 736
+      Top = 852
+      Width = 1342
+      Align = alClient
+      PopupMenu = PopupMenu1
+      CaretColor = 33023
+      CaretType = cartUser
+      CaretWidth = 8
+      CaretHeight = 20
+      CaretYShift = 3
+      OnInput = CmdBoxInput
+      LineCount = 1000
+      Font.Color = clSilver
+      Font.Height = -39
+      Font.Name = 'Sans'
+      BackGroundColor = clNavy
+      TabWidth = 60
+      PassWordChar = '*'
+      HistoryMax = 10
+      InputSelColor = clPurple
+      InputSelBackGround = clSilver
+      CaretInterval = 500
+      EscapeCodeType = esctCmdBox
+      GraphicalCharacterWidth = 10
+    end
     object Chart1: TChart
-      Left = 8
-      Height = 752
-      Top = 224
-      Width = 848
+      Left = 1
+      Height = 808
+      Top = 1
+      Width = 1342
       AxisList = <      
         item
           Marks.LabelBrush.Style = bsClear
@@ -134,6 +190,7 @@ object WMainForm: TWMainForm
       Title.Text.Strings = (
         'TAChart'
       )
+      Align = alTop
       object Chart1ConstantLine1: TConstantLine
         LineStyle = lsVertical
         Position = 0
@@ -141,70 +198,23 @@ object WMainForm: TWMainForm
       object Chart1ConstantLine2: TConstantLine
         Position = 0
       end
-      object Chart1LineSeries1: TLineSeries
-        LinePen.Color = clLime
+      object GraphPuntos: TLineSeries
+        LinePen.Color = clNavy
+        LineType = ltNone
+        Pointer.Brush.Color = clRed
         Pointer.HorizSize = 1
-        Pointer.Style = psCross
-        Pointer.VertSize = 3
+        Pointer.OverrideColor = [ocBrush, ocPen]
+        Pointer.Pen.Color = clRed
+        Pointer.Pen.Width = 5
+        Pointer.Style = psDiagCross
+        Pointer.VertSize = 1
         ShowPoints = True
       end
-      object Chart1LineSeries2: TLineSeries
+      object GraphFunciones: TLineSeries
       end
-      object Chart1AreaSeries1: TAreaSeries
+      object GraphArea: TAreaSeries
         UseZeroLevel = True
       end
-    end
-  end
-  object Splitter1: TSplitter
-    Left = 2204
-    Height = 1243
-    Top = 0
-    Width = 6
-    Align = alRight
-    Beveled = True
-    ResizeAnchor = akRight
-  end
-  object CmdBox: TCmdBox
-    Left = 1224
-    Height = 1243
-    Top = 312
-    Width = 1320
-    Align = alCustom
-    PopupMenu = PopupMenu1
-    CaretColor = 33023
-    CaretType = cartUser
-    CaretWidth = 8
-    CaretHeight = 20
-    CaretYShift = 3
-    OnInput = CmdBoxInput
-    LineCount = 1000
-    Font.Height = -35
-    Font.Name = 'Sans'
-    BackGroundColor = clNavy
-    TabWidth = 60
-    PassWordChar = '*'
-    HistoryMax = 10
-    InputSelColor = clPurple
-    InputSelBackGround = clSilver
-    CaretInterval = 500
-    EscapeCodeType = esctCmdBox
-    GraphicalCharacterWidth = 10
-  end
-  object Panel1: TPanel
-    Left = 0
-    Height = 1243
-    Top = 0
-    Width = 1328
-    Align = alClient
-    Caption = 'Panel1'
-    ClientHeight = 1243
-    ClientWidth = 1328
-    TabOrder = 3
-    object Splitter2: TSplitter
-      Left = 1
-      Height = 1241
-      Top = 1
-      Width = 10
     end
   end
   object ReaderTimer: TTimer

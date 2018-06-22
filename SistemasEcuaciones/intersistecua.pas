@@ -27,6 +27,7 @@ type
     procedure Button1Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
+    procedure meEcuaChange(Sender: TObject);
 
   private
     Sistema: TclSistem;
@@ -54,6 +55,11 @@ begin
 end;
 
 procedure TForm1.FormDestroy(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.meEcuaChange(Sender: TObject);
 begin
 
 end;

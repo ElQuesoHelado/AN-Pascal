@@ -10,14 +10,18 @@ uses
 type
   TCustParse = class
   private
+    FParser: TFPExpressionParser;
     expresion: string;
     procedure extraFunctions();
 
 
   public
-    FParser: TFPExpressionParser;
     identVar: array of TFPExprIdentifierDef;
     procedure addExpression(Exp: string);
+
+    function getExpression():string;
+    function getVariables():string;
+
     procedure addVariable(Name: string; Value: real);
     function evaluate(): real;
     constructor Create;
@@ -168,6 +172,20 @@ end;
 procedure TCustParse.addExpression(Exp: string);
 begin
   FParser.Expression := Exp;
+end;
+
+function TCustParse.getExpression():string;
+begin
+  Result:=FParser.Expression;
+end;
+
+function TCustParse.getVariables():string;
+var
+  i:Integer;
+begin
+  Result:='';
+  for i:=0 to FParser.Identifiers.Count-1 do
+  Result+=' ||Variable '+FParser.Identifiers[i].Name+' Valor '+FParser.Identifiers[i].Value;
 end;
 
 procedure TCustParse.addVariable(Name: string; Value: real);

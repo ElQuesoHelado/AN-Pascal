@@ -177,14 +177,6 @@ begin
     matriz.newMatrix(jaco);
     matriz.inv();
 
-    //Mult manual
-    //*****
-
-
-    //******
-
-
-
     matriz.mult(fx);
     matriz.restainv(inVar);
 
@@ -259,6 +251,18 @@ power(x,2)-power(y,2)-1
 x=2
 y=1
 
+
+Otro Problema
+power(x,2)+3*power(y,2)+exp(z)+w-4.71828183
+3*sen(x+y)+ln(y-w)
+power(w,2)+arctan(x)-(pi/4)-4
+5*y+3*w+ln(z+x+y)+11
+
+
+x=1
+y=-1
+z=1
+w=-2
 
 
 

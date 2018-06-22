@@ -8,7 +8,8 @@ uses
   {$ENDIF}{$ENDIF}
   Interfaces, // this includes the LCL widgetset
   Forms
-  { add your units here }, wnmainform, cmdbox, tachartlazaruspkg;
+  { add your units here }, wnmainform, cmdbox, tachartlazaruspkg, storvar,
+  clsedo;
 
 begin
   Application.Initialize;

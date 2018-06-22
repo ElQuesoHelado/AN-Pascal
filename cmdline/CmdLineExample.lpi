@@ -40,13 +40,13 @@
         <PackageName Value="LCL"/>
       </Item3>
     </RequiredPackages>
-    <Units Count="15">
+    <Units Count="20">
       <Unit0>
         <Filename Value="CmdLineExample.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <CursorPos X="59" Y="15"/>
-        <UsageCount Value="184"/>
+        <CursorPos X="9" Y="12"/>
+        <UsageCount Value="202"/>
       </Unit0>
       <Unit1>
         <Filename Value="wnmainform.pas"/>
@@ -55,230 +55,272 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="254"/>
-        <CursorPos X="21" Y="254"/>
-        <UsageCount Value="184"/>
+        <TopLine Value="532"/>
+        <CursorPos X="23" Y="541"/>
+        <UsageCount Value="202"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
       <Unit2>
-        <Filename Value="..\ucmdline.pas"/>
-        <TopLine Value="146"/>
-        <CursorPos X="48" Y="1083"/>
-        <UsageCount Value="2"/>
+        <Filename Value="wnmainform.lfm"/>
+        <SyntaxHighlighter Value="LFM"/>
+        <UsageCount Value="30"/>
       </Unit2>
       <Unit3>
-        <Filename Value="wnmainform.lfm"/>
-        <UsageCount Value="44"/>
-        <DefaultSyntaxHighlighter Value="LFM"/>
-      </Unit3>
-      <Unit4>
         <Filename Value="tcmdbox.lrs"/>
         <CursorPos X="17"/>
-        <UsageCount Value="11"/>
-      </Unit4>
-      <Unit5>
+        <UsageCount Value="7"/>
+      </Unit3>
+      <Unit4>
         <Filename Value="ucmdline.pas"/>
         <CursorPos X="8" Y="30"/>
-        <UsageCount Value="28"/>
-      </Unit5>
-      <Unit6>
+        <UsageCount Value="14"/>
+      </Unit4>
+      <Unit5>
         <Filename Value="..\uflowcharteditor.pas"/>
         <TopLine Value="1015"/>
         <CursorPos X="25" Y="1039"/>
-        <UsageCount Value="14"/>
-      </Unit6>
-      <Unit7>
+        <UsageCount Value="10"/>
+      </Unit5>
+      <Unit6>
         <Filename Value="ucmdbox.pas"/>
         <UnitName Value="uCmdBox"/>
         <EditorIndex Value="-1"/>
-        <CursorPos X="65" Y="14"/>
-        <UsageCount Value="49"/>
-      </Unit7>
-      <Unit8>
+        <TopLine Value="2380"/>
+        <CursorPos Y="2402"/>
+        <UsageCount Value="37"/>
+      </Unit6>
+      <Unit7>
         <Filename Value="..\..\lcl\include\application.inc"/>
         <TopLine Value="91"/>
         <CursorPos X="7" Y="128"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="4"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\..\..\..\..\share\fpcsrc\3.0.4\rtl\objpas\classes\classesh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="751"/>
+        <CursorPos X="14" Y="774"/>
+        <UsageCount Value="10"/>
       </Unit8>
       <Unit9>
-        <Filename Value="edo.pas"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="275"/>
-        <CursorPos X="26" Y="275"/>
-        <UsageCount Value="25"/>
+        <Filename Value="claseinter.pas"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="111"/>
+        <CursorPos X="25" Y="163"/>
+        <UsageCount Value="71"/>
         <Loaded Value="True"/>
       </Unit9>
       <Unit10>
-        <Filename Value="..\..\..\fpc\src\rtl\objpas\sysutils\sysstrh.inc"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="151"/>
-        <CursorPos X="10" Y="173"/>
-        <UsageCount Value="8"/>
+        <Filename Value="edo.pas"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="67"/>
+        <CursorPos Y="206"/>
+        <UsageCount Value="87"/>
+        <Loaded Value="True"/>
       </Unit10>
       <Unit11>
-        <Filename Value="claseli.pas"/>
-        <EditorIndex Value="2"/>
-        <TopLine Value="184"/>
-        <CursorPos X="8" Y="250"/>
-        <UsageCount Value="22"/>
+        <Filename Value="storvar.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="StorVar"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="39"/>
+        <CursorPos X="3" Y="68"/>
+        <UsageCount Value="169"/>
         <Loaded Value="True"/>
       </Unit11>
       <Unit12>
-        <Filename Value="grafform.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="Form1"/>
-        <HasResources Value="True"/>
-        <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="14" Y="13"/>
-        <UsageCount Value="40"/>
+        <Filename Value="clgrange.pas"/>
+        <UnitName Value="clGrange"/>
+        <EditorIndex Value="9"/>
+        <CursorPos X="38" Y="15"/>
+        <UsageCount Value="55"/>
+        <Loaded Value="True"/>
       </Unit12>
       <Unit13>
-        <Filename Value="claseinter.pas"/>
-        <EditorIndex Value="3"/>
-        <TopLine Value="177"/>
-        <CursorPos X="11" Y="177"/>
-        <UsageCount Value="18"/>
+        <Filename Value="claseli.pas"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="98"/>
+        <CursorPos X="20" Y="114"/>
+        <UsageCount Value="42"/>
         <Loaded Value="True"/>
       </Unit13>
       <Unit14>
         <Filename Value="custparse.pas"/>
         <UnitName Value="custParse"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="24" Y="17"/>
-        <UsageCount Value="16"/>
+        <EditorIndex Value="8"/>
+        <TopLine Value="164"/>
+        <CursorPos Y="207"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
       </Unit14>
+      <Unit15>
+        <Filename Value="..\..\..\..\..\share\fpcsrc\3.0.4\rtl\objpas\sysutils\sysstrh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="151"/>
+        <CursorPos X="31" Y="173"/>
+        <UsageCount Value="8"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="clsedo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="clSEDO"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="12"/>
+        <CursorPos Y="38"/>
+        <UsageCount Value="76"/>
+        <Loaded Value="True"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="clsistem.pas"/>
+        <UnitName Value="clSistem"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="275"/>
+        <CursorPos X="29" Y="351"/>
+        <UsageCount Value="35"/>
+        <Loaded Value="True"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="clMatrix.pas"/>
+        <EditorIndex Value="7"/>
+        <CursorPos X="35" Y="23"/>
+        <UsageCount Value="35"/>
+        <Loaded Value="True"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="..\..\lcl\include\wincontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="7130"/>
+        <CursorPos Y="7153"/>
+        <UsageCount Value="9"/>
+      </Unit19>
     </Units>
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
-        <Filename Value="wnmainform.pas"/>
-        <Caret Line="129" Column="9" TopLine="108"/>
+        <Filename Value="clsistem.pas"/>
+        <Caret Line="362" Column="55" TopLine="324"/>
       </Position1>
       <Position2>
         <Filename Value="wnmainform.pas"/>
-        <Caret Line="130" Column="23" TopLine="108"/>
+        <Caret Line="460" Column="41" TopLine="434"/>
       </Position2>
       <Position3>
         <Filename Value="wnmainform.pas"/>
-        <Caret Line="129" Column="10" TopLine="108"/>
+        <Caret Line="458" Column="19" TopLine="425"/>
       </Position3>
       <Position4>
         <Filename Value="wnmainform.pas"/>
-        <Caret Line="130" Column="31" TopLine="108"/>
+        <Caret Line="443" Column="37" TopLine="426"/>
       </Position4>
       <Position5>
         <Filename Value="wnmainform.pas"/>
-        <Caret Line="125" Column="31" TopLine="108"/>
+        <Caret Line="439" Column="41" TopLine="410"/>
       </Position5>
       <Position6>
-        <Filename Value="wnmainform.pas"/>
-        <Caret Line="131" Column="16" TopLine="109"/>
+        <Filename Value="clsistem.pas"/>
+        <Caret Line="375" Column="22" TopLine="338"/>
       </Position6>
       <Position7>
         <Filename Value="wnmainform.pas"/>
-        <Caret Line="346" Column="34" TopLine="324"/>
+        <Caret Line="549" Column="36" TopLine="533"/>
       </Position7>
       <Position8>
         <Filename Value="wnmainform.pas"/>
-        <Caret Line="131" Column="21" TopLine="108"/>
+        <Caret Line="554" Column="24" TopLine="554"/>
       </Position8>
       <Position9>
-        <Filename Value="wnmainform.pas"/>
-        <Caret Line="130" Column="42" TopLine="107"/>
+        <Filename Value="claseli.pas"/>
+        <Caret Line="194" Column="42" TopLine="181"/>
       </Position9>
       <Position10>
-        <Filename Value="wnmainform.pas"/>
-        <Caret Line="127" TopLine="107"/>
+        <Filename Value="claseli.pas"/>
+        <Caret Line="209" Column="22" TopLine="167"/>
       </Position10>
       <Position11>
         <Filename Value="wnmainform.pas"/>
-        <Caret Line="128" TopLine="108"/>
+        <Caret Line="522" Column="66" TopLine="497"/>
       </Position11>
       <Position12>
-        <Filename Value="wnmainform.pas"/>
-        <Caret Line="127" TopLine="107"/>
+        <Filename Value="claseli.pas"/>
+        <Caret Line="203" Column="52" TopLine="182"/>
       </Position12>
       <Position13>
         <Filename Value="wnmainform.pas"/>
-        <Caret Line="125" Column="19" TopLine="115"/>
+        <Caret Line="523" Column="65" TopLine="501"/>
       </Position13>
       <Position14>
-        <Filename Value="edo.pas"/>
-        <Caret Line="108" Column="52" TopLine="93"/>
+        <Filename Value="wnmainform.pas"/>
+        <Caret Line="515" Column="23" TopLine="501"/>
       </Position14>
       <Position15>
         <Filename Value="wnmainform.pas"/>
-        <Caret Line="352" Column="20" TopLine="323"/>
+        <Caret Line="512" Column="30" TopLine="501"/>
       </Position15>
       <Position16>
-        <Filename Value="wnmainform.pas"/>
-        <Caret Line="120" TopLine="100"/>
+        <Filename Value="claseli.pas"/>
+        <Caret Line="188" Column="15" TopLine="167"/>
       </Position16>
       <Position17>
         <Filename Value="wnmainform.pas"/>
-        <Caret Line="74" Column="49" TopLine="54"/>
+        <Caret Line="522" Column="40" TopLine="489"/>
       </Position17>
       <Position18>
         <Filename Value="wnmainform.pas"/>
-        <Caret Line="63" Column="16" TopLine="47"/>
+        <Caret Line="511" Column="48" TopLine="489"/>
       </Position18>
       <Position19>
-        <Filename Value="wnmainform.pas"/>
-        <Caret Line="164" Column="18" TopLine="142"/>
+        <Filename Value="claseli.pas"/>
+        <Caret Line="215" Column="25" TopLine="183"/>
       </Position19>
       <Position20>
-        <Filename Value="wnmainform.pas"/>
-        <Caret Line="333" Column="56" TopLine="323"/>
+        <Filename Value="claseli.pas"/>
+        <Caret Line="164" Column="15" TopLine="150"/>
       </Position20>
       <Position21>
-        <Filename Value="wnmainform.pas"/>
-        <Caret Line="362" Column="41" TopLine="340"/>
+        <Filename Value="claseli.pas"/>
+        <Caret Line="238" Column="42" TopLine="219"/>
       </Position21>
       <Position22>
         <Filename Value="wnmainform.pas"/>
-        <Caret Line="67" Column="23" TopLine="46"/>
+        <Caret Line="542" Column="32" TopLine="507"/>
       </Position22>
       <Position23>
         <Filename Value="wnmainform.pas"/>
-        <Caret Line="394" Column="23" TopLine="369"/>
+        <Caret Line="548" Column="65" TopLine="522"/>
       </Position23>
       <Position24>
-        <Filename Value="edo.pas"/>
-        <Caret Line="103" Column="20" TopLine="82"/>
+        <Filename Value="wnmainform.pas"/>
+        <Caret Line="543" Column="49" TopLine="522"/>
       </Position24>
       <Position25>
         <Filename Value="wnmainform.pas"/>
-        <Caret Line="224" Column="11" TopLine="197"/>
+        <Caret Line="549" Column="17" TopLine="522"/>
       </Position25>
       <Position26>
-        <Filename Value="wnmainform.pas"/>
-        <Caret Line="70" Column="15" TopLine="49"/>
+        <Filename Value="claseli.pas"/>
+        <Caret Line="236" Column="46" TopLine="210"/>
       </Position26>
       <Position27>
         <Filename Value="wnmainform.pas"/>
-        <Caret Line="224" Column="3" TopLine="217"/>
+        <Caret Line="553" Column="49" TopLine="531"/>
       </Position27>
       <Position28>
         <Filename Value="wnmainform.pas"/>
-        <Caret Line="70" Column="15" TopLine="49"/>
+        <Caret Line="554" Column="82" TopLine="525"/>
       </Position28>
       <Position29>
         <Filename Value="wnmainform.pas"/>
-        <Caret Line="358" Column="27" TopLine="347"/>
+        <Caret Line="544" Column="46" TopLine="532"/>
       </Position29>
       <Position30>
-        <Filename Value="wnmainform.pas"/>
-        <Caret Line="280" Column="13" TopLine="276"/>
+        <Filename Value="claseli.pas"/>
+        <Caret Line="191" Column="19" TopLine="172"/>
       </Position30>
     </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>
     <Version Value="11"/>
     <PathDelim Value="\"/>
-    <SearchPaths>
-      <Libraries Value="\usr\lib\gcc\x86_64-pc-linux-gnu\8.1.0\"/>
-    </SearchPaths>
     <Parsing>
       <SyntaxOptions>
         <UseAnsiStrings Value="False"/>
