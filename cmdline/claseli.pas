@@ -197,16 +197,36 @@ end;
 
 function clLinea.Execute(): boolean;
 var
-  resParcial, hpaso, a, b: real;
-  i, n: integer;
+  resParcial, hpaso,i, a, b: real;
+  n: integer;
 begin
 
-  Result := True;
-  if (ecuacion(InteIzq) * ecuacion(InteDer) > 0.0) then//si no existe hay raiz
+  //Result := True;
+  //if (ecuacion(InteIzq) * ecuacion(InteDer) > 0.0) then//si no existe hay raiz
+  //begin
+  //  Result := False;
+  //  exit;
+  //end;
+
+
+
+  //raiz("power(x,4)-3*power(x,2)+x",-2,2)
+
+  i:=InteIzq;
+  Result := False;
+  //Determinar si hay raiz en el intervalo
+  while (i<InteDer) do
   begin
-    Result := False;
-    exit;
+    if (ecuacion(i) * ecuacion(i+h) < 0.0) then//si no existe hay raiz
+    begin
+      Result := True;
+      break;
+    end;
+    i:=i+h;
   end;
+
+  if (Result=False) then
+  exit;
 
   i := 0;
   resParcial := 0;

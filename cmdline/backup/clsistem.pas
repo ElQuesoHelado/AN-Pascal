@@ -14,7 +14,7 @@ type
   TSENL = class
 
   private
-    errAll, h: real;
+    errAll, h,xf: real;
     procedure Split(Input: string; const Strings: TStrings);
 
 
@@ -81,7 +81,7 @@ procedure TSENL.Split(Input: string; const Strings: TStrings);
 begin
   Assert(Assigned(Strings));
   Strings.Clear;
-  Strings.StrictDelimiter := True;
+  //Strings.StrictDelimiter := True;
   Strings.Delimiter := ' ';
   Strings.QuoteChar := '"';
   Strings.DelimitedText := Input;

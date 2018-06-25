@@ -1,29 +1,29 @@
 object WMainForm: TWMainForm
-  Left = 399
-  Height = 1589
-  Top = 128
-  Width = 1593
-  Caption = 'TCmdBox Example Application'
-  ClientHeight = 1589
-  ClientWidth = 1593
+  Left = 469
+  Height = 1588
+  Top = 94
+  Width = 1740
+  Caption = 'AN-Numerico'
+  ClientHeight = 1588
+  ClientWidth = 1740
   DesignTimePPI = 192
   OnCreate = FormCreate
   OnDestroy = FormDestroy
   Position = poScreenCenter
   LCLVersion = '1.8.2.0'
   object RightPanel: TPanel
-    Left = 1344
-    Height = 1589
+    Left = 1491
+    Height = 1588
     Top = 0
     Width = 243
     Align = alRight
-    ClientHeight = 1589
+    ClientHeight = 1588
     ClientWidth = 243
     TabOrder = 0
     object Label1: TLabel
       Left = 16
       Height = 37
-      Top = 8
+      Top = 848
       Width = 91
       Caption = 'History'
       ParentColor = False
@@ -31,7 +31,7 @@ object WMainForm: TWMainForm
     object Button1: TButton
       Left = 16
       Height = 25
-      Top = 1549
+      Top = 1548
       Width = 211
       Anchors = [akLeft, akRight, akBottom]
       BorderSpacing.InnerBorder = 4
@@ -40,9 +40,9 @@ object WMainForm: TWMainForm
       TabOrder = 0
     end
     object HistoryList: TListBox
-      Left = 22
-      Height = 444
-      Top = 64
+      Left = 16
+      Height = 443
+      Top = 896
       Width = 205
       Anchors = [akTop, akLeft, akRight, akBottom]
       ItemHeight = 0
@@ -53,7 +53,7 @@ object WMainForm: TWMainForm
     object Button2: TButton
       Left = 16
       Height = 25
-      Top = 1364
+      Top = 1363
       Width = 211
       Anchors = [akLeft, akRight, akBottom]
       BorderSpacing.InnerBorder = 4
@@ -64,7 +64,7 @@ object WMainForm: TWMainForm
     object CbSetCaret: TComboBox
       Left = 16
       Height = 49
-      Top = 1488
+      Top = 1487
       Width = 211
       Anchors = [akLeft, akRight, akBottom]
       ItemHeight = 0
@@ -82,7 +82,7 @@ object WMainForm: TWMainForm
     object Button3: TButton
       Left = 16
       Height = 25
-      Top = 1396
+      Top = 1395
       Width = 211
       Anchors = [akLeft, akRight, akBottom]
       Caption = 'Process'
@@ -92,7 +92,7 @@ object WMainForm: TWMainForm
     object cbWordWrap: TCheckBox
       Left = 18
       Height = 39
-      Top = 1414
+      Top = 1413
       Width = 156
       Anchors = [akLeft, akBottom]
       Caption = 'WordWrap'
@@ -101,10 +101,32 @@ object WMainForm: TWMainForm
       State = cbChecked
       TabOrder = 5
     end
+    object sbZoom: TScrollBar
+      Left = 18
+      Height = 20
+      Top = 808
+      Width = 199
+      Max = 50
+      Min = 1
+      PageSize = 0
+      Position = 10
+      TabOrder = 6
+      OnChange = sbZoomChange
+    end
+    object ChartListbox1: TChartListbox
+      Left = 0
+      Height = 464
+      Top = 0
+      Width = 243
+      Chart = Chart1
+      OnSeriesIconDblClick = ChartListbox1SeriesIconDblClick
+      ItemHeight = 0
+      TabOrder = 7
+    end
   end
   object Splitter1: TSplitter
-    Left = 1587
-    Height = 1589
+    Left = 1734
+    Height = 1588
     Top = 0
     Width = 6
     Align = alRight
@@ -113,28 +135,28 @@ object WMainForm: TWMainForm
   end
   object Panel1: TPanel
     Left = 0
-    Height = 1589
+    Height = 1588
     Top = 0
-    Width = 1344
+    Width = 1491
     Align = alClient
     Caption = 'Panel1'
-    ClientHeight = 1589
-    ClientWidth = 1344
+    ClientHeight = 1588
+    ClientWidth = 1491
     TabOrder = 2
     object Splitter2: TSplitter
       Cursor = crVSplit
       Left = 1
       Height = 43
       Top = 809
-      Width = 1342
+      Width = 1489
       Align = alTop
       ResizeAnchor = akTop
     end
     object CmdBox: TCmdBox
       Left = 1
-      Height = 736
+      Height = 735
       Top = 852
-      Width = 1342
+      Width = 1489
       Align = alClient
       PopupMenu = PopupMenu1
       CaretColor = 33023
@@ -161,7 +183,7 @@ object WMainForm: TWMainForm
       Left = 1
       Height = 808
       Top = 1
-      Width = 1342
+      Width = 1489
       AxisList = <      
         item
           Marks.LabelBrush.Style = bsClear
@@ -179,10 +201,10 @@ object WMainForm: TWMainForm
       Extent.UseXMin = True
       Extent.UseYMax = True
       Extent.UseYMin = True
-      Extent.XMax = 20
-      Extent.XMin = -20
-      Extent.YMax = 20
-      Extent.YMin = -20
+      Extent.XMax = 10
+      Extent.XMin = -10
+      Extent.YMax = 10
+      Extent.YMin = -10
       Foot.Brush.Color = clBtnFace
       Foot.Font.Color = clBlue
       Title.Brush.Color = clBtnFace
@@ -191,29 +213,15 @@ object WMainForm: TWMainForm
         'TAChart'
       )
       Align = alTop
+      Visible = False
       object Chart1ConstantLine1: TConstantLine
         LineStyle = lsVertical
         Position = 0
+        Title = 'AxisY'
       end
       object Chart1ConstantLine2: TConstantLine
         Position = 0
-      end
-      object GraphPuntos: TLineSeries
-        LinePen.Color = clNavy
-        LineType = ltNone
-        Pointer.Brush.Color = clRed
-        Pointer.HorizSize = 1
-        Pointer.OverrideColor = [ocBrush, ocPen]
-        Pointer.Pen.Color = clRed
-        Pointer.Pen.Width = 5
-        Pointer.Style = psDiagCross
-        Pointer.VertSize = 1
-        ShowPoints = True
-      end
-      object GraphFunciones: TLineSeries
-      end
-      object GraphArea: TAreaSeries
-        UseZeroLevel = True
+        Title = 'AxisX'
       end
     end
   end
@@ -243,5 +251,32 @@ object WMainForm: TWMainForm
     object MenuItem1: TMenuItem
       Caption = 'Nothing here'
     end
+  end
+  object ColorDialog1: TColorDialog
+    Color = clBlack
+    CustomColors.Strings = (
+      'ColorA=000000'
+      'ColorB=000080'
+      'ColorC=008000'
+      'ColorD=008080'
+      'ColorE=800000'
+      'ColorF=800080'
+      'ColorG=808000'
+      'ColorH=808080'
+      'ColorI=C0C0C0'
+      'ColorJ=0000FF'
+      'ColorK=00FF00'
+      'ColorL=00FFFF'
+      'ColorM=FF0000'
+      'ColorN=FF00FF'
+      'ColorO=FFFF00'
+      'ColorP=FFFFFF'
+      'ColorQ=C0DCC0'
+      'ColorR=F0CAA6'
+      'ColorS=F0FBFF'
+      'ColorT=A4A0A0'
+    )
+    left = 296
+    top = 104
   end
 end

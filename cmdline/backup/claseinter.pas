@@ -178,7 +178,7 @@ begin
   res := 0;
 
   i := 1;
-  while (i <= n+2) do
+  while (i <= n) do
   begin
     if (area) then
       res += abs(solve(a + (3 * i - 3) * h)) + 3 * abs(solve(a + (3 * i - 2) * h)) +

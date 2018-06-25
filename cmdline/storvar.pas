@@ -24,8 +24,7 @@ type
     arrayReal: TArrSimp;
     arrayValores: TStringList;
     varFloat: double;
-    esFloat: boolean;
-    esArray: boolean;
+    esArray:boolean;
     //boolean in case of failure
     function getName(): string;
     procedure Split(Input: string; const Strings: TStrings);
@@ -44,6 +43,7 @@ begin
   varstr := '';
   varfloat := 0;
   setlength(arrayReal, 0);
+  //esArray:=False;
 
   arrayValores := TStringList.Create;
   prueba := TStringList.Create;
@@ -87,13 +87,8 @@ var
 begin
   valuetemp := trim(Value);
   nametemp := trim(Name);
-
-
-  //valuetemp := Value;
-  //nametemp:=Name;
-
-  //Result := True;
-  esFloat := True;
+  Result:=true;
+  esArray:=false;
 
   //if they are empty
   if (valuetemp = '') or (nametemp = '') or (TryStrToFloat(nameTemp, floattemp)) then
@@ -104,11 +99,7 @@ begin
 
   varname := nametemp;
 
-
-  //*****
-  esArray := False;
-  //value
-  //if it's a float
+  //Stores value as string
   if (TryStrToFloat(valuetemp, floattemp)) then
     varstr:=valuetemp
   else if (valuetemp[1] = '[') or (valuetemp[length(valuetemp)] = ']') then
@@ -122,7 +113,6 @@ begin
   end
   else //failure = is a non empty string
     varstr := valuetemp;
-  esFloat := False;
 end;
 
 end.
